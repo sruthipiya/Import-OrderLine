@@ -1,0 +1,17 @@
+<odoo>
+    <record id="upload_file" model="ir.ui.view">
+        <field name="name">Upload File</field>
+        <field name="model">upload.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="upload_file"/>
+                <footer>
+                    <button name="action_import" string="Import" class="btn-secondary"
+                            type="object"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+
+    </record>
+</odoo>

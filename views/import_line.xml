@@ -1,0 +1,13 @@
+<odoo>
+    <record id="sale_order_view_id" model="ir.ui.view">
+        <field name="name">Import lines</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_confirm']" position="after">
+                <button name="action_import_lines" class="oe_highlight"
+                            states="draft" string="IMPORT LINES" type="object"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
